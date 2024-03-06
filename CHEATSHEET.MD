@@ -1,4 +1,4 @@
-### Releasing
+  ### Releasing
 
 To release your library to `bower` initially:
 

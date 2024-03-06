@@ -60,6 +60,19 @@
               // template method //
             }
           };
+            
+             /**  
+              * @param {object} point
+              * @param {object} hight
+              * @param {object} width
+              */
+          function calculateDistance(pointA, pointB){
+            let distanceX = pointB.X - pointA.Y
+            let distanceY = pointB.Y - pointA.Y
+            const distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
+            return distance
+          }
+          calculateDistance()
         },
       },
     };
