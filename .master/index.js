@@ -68,7 +68,7 @@
        * @param {Object} pointB: A point with properties x and y.
        * @return {Number}: The distance in pixels between pointA and pointB.
        */
-      getDistance(pointA, pointB) {
+      CalculateDistance(pointA, pointB) {
         const
           distanceX = Math.abs(pointB.x - pointA.x),
           distanceY = Math.abs(pointB.y - pointA.y);
