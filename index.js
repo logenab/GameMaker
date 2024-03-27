@@ -61,7 +61,9 @@
         };
       },
 
-      /**
+      
+    },
+    /**
        * Using the Pythagorean Theorem, returns the distance in pixels between 
        * two points.
        * 
@@ -75,7 +77,6 @@
           distanceY = Math.abs(pointB.y - pointA.y);
         return Math.sqrt(distanceX * distanceX + distanceY * distanceY);
       }
-    },
   };
 }(window, window._));
 

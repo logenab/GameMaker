@@ -25,3 +25,9 @@ References:
 
 * <a href="http://bob.yexley.net/creating-and-maintaining-your-own-bower-package/" target="_blank">Creating & Maintaining Your Own Bower Package</a>
 * <a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging" target="_blank">Git Tagging</a>
+
+cd video-game-course/<project-name>
+npm install -g bower
+bower install --save https://github.com/logenab/GameMaker.git
+cd ../..
+
