@@ -1,7 +1,21 @@
 // Implementation of makeBody() //
 (function (window, _) {
   window.gamz = window.gamz || {
-    numz: {},
+    numz: {
+      getAngleDegrees(pointA, pointB) {
+        const distanceX = pointB.x - pointA.x;
+        const distanceY = pointB.y - pointA.x;
+        const radians = Math.antan2(distanceY, distanceX);
+        const degrees = (radians * 180) / Math.PI;
+        return degrees;
+      },
+      degreesToRadians(degrees) {
+        return (degrees * Math.PI) / 180;
+      },
+      radiansToDegrees(radians) {
+        return (radians * 180) / Math.PI;
+      },
+    },
     phyz: {
       /**
        * Returns an Object with basic properties utilized in a
@@ -101,7 +115,7 @@
           accelerationOnY = Math.sin(angle) * forceOnY;
         body.velocityX += accelerationOnX;
         body.velocityY += accelerationOnY;
-      }
+      },
       /**
        * Updates the x and y properties of a body based on its
        * velocityX and velocityY, and, updates the rotation of
@@ -110,8 +124,7 @@
        * @param {Object} body: The body must be an Object
        * with x, y, rotation, velocityX, velocityY, and
        * rotationalVelocity properties.
-       */,
-      updatePosition(body) {
+       */ updatePosition(body) {
         body.x += body.velocityX;
         body.y += body.velocityY;
         body.rotation += body.rotationalVelocity;
