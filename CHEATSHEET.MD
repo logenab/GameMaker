@@ -31,3 +31,4 @@ npm install -g bower
 bower install --save https://github.com/logenab/GameMaker.git
 cd ../..
 
+//uninstalling bower uninstall GameMaker
